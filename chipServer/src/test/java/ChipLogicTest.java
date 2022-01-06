@@ -2,23 +2,25 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import Layer3_Logic.ChipLogic;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 import java.util.Optional;
 
-import static org.junit.Assert.*;
 
 
 
 
-public class testChipLogic {
+
+public class ChipLogicTest {
 
     //The Chips can be subtracted and added whenever #5
 
 
 
     @Test
-    public void chipAddition1(){
+    public void chipAddition1Test(){
         ChipLogic logic = new ChipLogic();
         Integer finalAmount = logic.add(400,500);
 
@@ -28,7 +30,7 @@ public class testChipLogic {
     }
 
     @Test
-    public void chipAddition2(){
+    public void chipAddition2Test(){
         ChipLogic logic = new ChipLogic();
         Integer finalAmount = logic.add(0,2000);
 
@@ -38,7 +40,7 @@ public class testChipLogic {
     }
 
     @Test
-    public void chipSubtraction1(){
+    public void chipSubtraction1Test(){
 
         ChipLogic logic = new ChipLogic();
         Integer finalAmount = logic.subtract(1000,500);

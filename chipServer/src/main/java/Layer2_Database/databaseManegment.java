@@ -14,6 +14,5 @@ public class databaseManegment {
     public Connection startConnection() throws SQLException{
         return DriverManager.getConnection(DISK_DB_URL);
     }
-
     }
 

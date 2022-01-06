@@ -37,14 +37,13 @@ public class Data {
                                 .append( idNumber ).append(",")
                                 .append( chips )
                                 ;
-                        System.out.println( b.toString() );
                         finalString = b.toString();
                     }
                     else{
                         finalString = "Couldnt Find Session";
                     }
 
-
+            System.out.println(finalString);
             return finalString;
         }
 
